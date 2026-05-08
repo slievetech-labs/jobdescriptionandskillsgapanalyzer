@@ -3,14 +3,18 @@ Job Description Gap & Contract Extractor
 Uses Claude API to analyze JDs and contracts, extract clauses, and find gaps.
 """
 
-import anthropic
 import json
 import sys
 from pathlib import Path
 from typing import Optional
 
 
-client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.getenv("ANTHROPIC_API_KEY")
+) # reads ANTHROPIC_API_KEY from env
 
 
 # ─────────────────────────────────────────────
