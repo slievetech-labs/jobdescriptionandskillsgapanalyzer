@@ -1,10 +1,10 @@
+import os
 import streamlit as st
-from anthropic import Anthropic
-from src.analyzer import analyze_jd_gaps
 
-client = Anthropic(
-    api_key=st.secrets["ANTHROPIC_API_KEY"]
-)
+# Load Streamlit secret into environment
+os.environ["ANTHROPIC_API_KEY"] = st.secrets["ANTHROPIC_API_KEY"]
+
+from src.analyzer import analyze_jd_gaps
 
 st.title("JD Gap Analyzer")
 
