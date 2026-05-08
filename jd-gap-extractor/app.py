@@ -21,122 +21,10 @@ def read_uploaded_file(uploaded_file):
     return uploaded_file.read().decode("utf-8", errors="ignore")
 
 
-st.markdown(
-"""
-<style>
-.stApp {
-    background: #03110c;
-    color: #f0fdf4;
-}
-
-.block-container {
-    max-width: 1180px;
-    padding-top: 2.5rem;
-}
-
-.hero {
-    background: linear-gradient(135deg, #03110c 0%, #063f2a 100%);
-    border: 1px solid rgba(34,197,94,0.25);
-    border-radius: 32px;
-    padding: 3rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 30px 90px rgba(0,0,0,0.45);
-}
-
-.logo-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 2rem;
-}
-
-.logo-box {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: #00e676;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #03110c;
-    font-weight: 900;
-    font-size: 24px;
-}
-
-.logo-text {
-    font-size: 1.25rem;
-    font-weight: 900;
-    color: #ffffff;
-}
-
-.logo-text span {
-    color: #00e676;
-}
-
-.hero-title {
-    font-size: 4rem;
-    font-weight: 950;
-    letter-spacing: -0.08em;
-    line-height: 1;
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-    color: #bbf7d0;
-    font-size: 1.15rem;
-    line-height: 1.8;
-    max-width: 720px;
-}
-
-.card {
-    background: rgba(2,18,13,0.95);
-    border: 1px solid rgba(34,197,94,0.18);
-    border-radius: 28px;
-    padding: 2rem;
-    margin-top: 1.5rem;
-}
-
-.stTextArea textarea {
-    background: #020c09 !important;
-    color: #f0fdf4 !important;
-    border: 1px solid rgba(34,197,94,0.22) !important;
-    border-radius: 18px !important;
-}
-
-.stFileUploader {
-    background: rgba(2,18,13,0.85);
-    border: 1px dashed rgba(34,197,94,0.28);
-    border-radius: 18px;
-    padding: 1rem;
-}
-
-.stButton button {
-    background: #00c853;
-    color: #03110c;
-    border: none;
-    border-radius: 999px;
-    padding: 0.8rem 1.8rem;
-    font-weight: 900;
-}
-
-.stButton button:hover {
-    background: #00e676;
-    color: #03110c;
-}
-
-hr {
-    border-color: rgba(34,197,94,0.18);
-}
-
-footer {
-    visibility: hidden;
-}
-</style>
-
+st.html("""
 <div class="hero">
     <div class="logo-row">
-        <div class="logo-box">⌁</div>
+        <div class="logo-box">▲</div>
         <div class="logo-text">Slieve<span>Tech</span></div>
     </div>
 
@@ -147,9 +35,7 @@ footer {
         hiring gaps, compliance risks, and workforce alignment.
     </div>
 </div>
-""",
-unsafe_allow_html=True
-)
+""")
 
 
 mode = st.radio(
