@@ -11,7 +11,7 @@ from src.analyzer import (
 
 st.set_page_config(
     page_title="TalentScope | SlieveTech",
-    page_icon="⛰",
+    page_icon="▲",
     layout="wide",
 )
 
@@ -21,136 +21,135 @@ def read_uploaded_file(uploaded_file):
     return uploaded_file.read().decode("utf-8", errors="ignore")
 
 
-st.markdown("""
+st.markdown(
+"""
 <style>
 .stApp {
-    background: linear-gradient(180deg, #02120d 0%, #041b14 55%, #020b08 100%);
+    background: #03110c;
     color: #f0fdf4;
 }
 
 .block-container {
-    padding-top: 2.5rem;
     max-width: 1180px;
+    padding-top: 2.5rem;
 }
 
-.slieve-hero {
-    background:
-        radial-gradient(circle at top right, rgba(34,197,94,0.18), transparent 30%),
-        linear-gradient(135deg, #03120d 0%, #063826 55%, #02120d 100%);
-    border: 1px solid rgba(74,222,128,0.18);
-    border-radius: 34px;
+.hero {
+    background: linear-gradient(135deg, #03110c 0%, #063f2a 100%);
+    border: 1px solid rgba(34,197,94,0.25);
+    border-radius: 32px;
     padding: 3rem;
     margin-bottom: 2rem;
     box-shadow: 0 30px 90px rgba(0,0,0,0.45);
 }
 
-.brand-row {
+.logo-row {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.brand-logo {
-    width: 54px;
-    height: 54px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+.logo-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #00e676;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #02120d;
-    font-size: 1.6rem;
+    color: #03110c;
     font-weight: 900;
+    font-size: 24px;
 }
 
-.brand-text {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #bbf7d0;
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: #00e676;
 }
 
 .hero-title {
-    font-size: 3.7rem;
-    font-weight: 900;
+    font-size: 4rem;
+    font-weight: 950;
+    letter-spacing: -0.08em;
     line-height: 1;
-    letter-spacing: -0.07em;
     color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    color: #bbf7d0;
+    font-size: 1.15rem;
     line-height: 1.8;
-    color: #d1fae5;
-    max-width: 760px;
+    max-width: 720px;
 }
 
 .card {
-    background: rgba(6,22,17,0.78);
-    border: 1px solid rgba(74,222,128,0.10);
+    background: rgba(2,18,13,0.95);
+    border: 1px solid rgba(34,197,94,0.18);
     border-radius: 28px;
     padding: 2rem;
-    margin-top: 1rem;
-    box-shadow: 0 16px 50px rgba(0,0,0,0.30);
+    margin-top: 1.5rem;
 }
 
 .stTextArea textarea {
-    background: rgba(2,12,9,0.95) !important;
+    background: #020c09 !important;
     color: #f0fdf4 !important;
-    border: 1px solid rgba(74,222,128,0.18) !important;
-    border-radius: 20px !important;
-    padding: 1rem !important;
+    border: 1px solid rgba(34,197,94,0.22) !important;
+    border-radius: 18px !important;
 }
 
 .stFileUploader {
-    background: rgba(3,15,11,0.75);
-    border-radius: 20px;
+    background: rgba(2,18,13,0.85);
+    border: 1px dashed rgba(34,197,94,0.28);
+    border-radius: 18px;
     padding: 1rem;
-    border: 1px dashed rgba(74,222,128,0.22);
 }
 
 .stButton button {
-    background: linear-gradient(135deg, #22c55e, #15803d);
-    color: white;
-    border: 0;
+    background: #00c853;
+    color: #03110c;
+    border: none;
     border-radius: 999px;
-    padding: 0.85rem 1.8rem;
-    font-weight: 800;
-    box-shadow: 0 12px 30px rgba(34,197,94,0.22);
+    padding: 0.8rem 1.8rem;
+    font-weight: 900;
 }
 
 .stButton button:hover {
-    transform: translateY(-2px);
-    opacity: 0.96;
+    background: #00e676;
+    color: #03110c;
 }
 
 hr {
-    border-color: rgba(74,222,128,0.14);
+    border-color: rgba(34,197,94,0.18);
 }
 
 footer {
     visibility: hidden;
 }
 </style>
-""", unsafe_allow_html=True)
 
-
-st.markdown("""
-<div class="slieve-hero">
-    <div class="brand-row">
-        <div class="brand-logo">⌁</div>
-        <div class="brand-text">SlieveTech</div>
+<div class="hero">
+    <div class="logo-row">
+        <div class="logo-box">⌁</div>
+        <div class="logo-text">Slieve<span>Tech</span></div>
     </div>
 
     <div class="hero-title">TalentScope</div>
 
     <div class="hero-subtitle">
-        Enterprise AI intelligence for job descriptions, employment contracts,
-        hiring gaps, compliance risks, and workforce alignment analysis.
+        AI-powered analysis for job descriptions, employment contracts,
+        hiring gaps, compliance risks, and workforce alignment.
     </div>
 </div>
-""", unsafe_allow_html=True)
+""",
+unsafe_allow_html=True
+)
 
 
 mode = st.radio(
@@ -164,9 +163,10 @@ st.divider()
 
 if mode == "Job Description Review":
     st.markdown('<div class="card">', unsafe_allow_html=True)
+
     st.subheader("Job Description Analysis")
 
-    jd_file = st.file_uploader("Upload JD file", type=["txt"], key="jd_only")
+    jd_file = st.file_uploader("Upload JD file", type=["txt"], key="jd_file")
     jd_text = read_uploaded_file(jd_file)
 
     jd_text = st.text_area(
@@ -182,7 +182,6 @@ if mode == "Job Description Review":
         else:
             with st.spinner("Analyzing job description..."):
                 result = analyze_jd_gaps(jd_text)
-
             st.success("Analysis completed")
             st.markdown(result)
 
@@ -191,13 +190,10 @@ if mode == "Job Description Review":
 
 elif mode == "Contract Review":
     st.markdown('<div class="card">', unsafe_allow_html=True)
+
     st.subheader("Employment Contract Review")
 
-    contract_file = st.file_uploader(
-        "Upload contract file",
-        type=["txt"],
-        key="contract_only",
-    )
+    contract_file = st.file_uploader("Upload contract file", type=["txt"], key="contract_file")
     contract_text = read_uploaded_file(contract_file)
 
     contract_text = st.text_area(
@@ -211,9 +207,8 @@ elif mode == "Contract Review":
         if not contract_text.strip():
             st.warning("Please upload or paste a contract.")
         else:
-            with st.spinner("Analyzing contract clauses..."):
+            with st.spinner("Analyzing contract..."):
                 result = extract_contract_clauses(contract_text)
-
             st.success("Contract review completed")
             st.json(result)
 
@@ -222,6 +217,7 @@ elif mode == "Contract Review":
 
 else:
     st.markdown('<div class="card">', unsafe_allow_html=True)
+
     st.subheader("JD and Contract Alignment")
 
     col1, col2 = st.columns(2)
@@ -234,22 +230,16 @@ else:
             "Paste job description",
             value=jd_text,
             height=350,
-            placeholder="Paste the job description...",
         )
 
     with col2:
-        contract_file = st.file_uploader(
-            "Upload contract file",
-            type=["txt"],
-            key="compare_contract",
-        )
+        contract_file = st.file_uploader("Upload contract file", type=["txt"], key="compare_contract")
         contract_text = read_uploaded_file(contract_file)
 
         contract_text = st.text_area(
             "Paste contract",
             value=contract_text,
             height=350,
-            placeholder="Paste the contract...",
         )
 
     if st.button("Compare Documents"):
