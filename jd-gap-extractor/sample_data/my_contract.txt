@@ -1,0 +1,27 @@
+EMPLOYMENT AGREEMENT
+
+This Agreement is entered into between Acme Corp ("Company") and Employee.
+
+1. POSITION
+Employee is hired as Senior Backend Engineer, reporting to the VP of Engineering.
+
+2. COMPENSATION
+Base salary: $125,000/year. Annual performance review with potential merit increase.
+
+3. EQUITY
+Employee is granted 0.05% stock options vesting over 4 years with a 1-year cliff.
+
+4. BENEFITS
+Company provides health, dental, and vision insurance. Employee is entitled to 20 days PTO per year.
+
+5. INTELLECTUAL PROPERTY
+Inventions created during working hours using Company resources are the property of the Company.
+
+6. NON-COMPETE
+Employee agrees not to join a direct competitor for 6 months after termination.
+
+7. TERMINATION
+Employment is at-will. Two weeks notice is appreciated but not required.
+
+8. CONFIDENTIALITY
+Employee shall not disclose proprietary Company information during or for 2 years after employment.

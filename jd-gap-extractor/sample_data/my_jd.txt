@@ -1,0 +1,23 @@
+Job Title: Senior Backend Engineer
+Company: Acme Corp
+Location: Remote
+
+About the Role:
+We are seeking a talented and passionate engineer to join our platform team.
+
+Requirements:
+- 5+ years of software engineering experience
+- Strong Python skills
+- Experience with AWS or GCP
+- Excellent communication skills
+
+Responsibilities:
+- Design and build scalable APIs
+- Collaborate with product and frontend teams
+- Participate in on-call rotation
+
+Compensation:
+- Salary: $120,000 – $150,000
+- Equity: 0.05% – 0.1%
+- Health, dental, vision insurance
+- Unlimited PTO
