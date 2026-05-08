@@ -42,115 +42,208 @@ html, body, [class*="css"] {
 
 .stApp {
     background:
+        radial-gradient(circle at top left,
+        rgba(34,197,94,0.12),
+        transparent 28%),
+
         linear-gradient(
             180deg,
-            #07111f 0%,
-            #0b1726 100%
+            #02120d 0%,
+            #041b14 50%,
+            #03110d 100%
         );
-    color: #f8fafc;
+
+    color: #f0fdf4;
 }
 
-/* MAIN CONTAINER */
+/* MAIN */
 .block-container {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     max-width: 1180px;
 }
 
 /* HERO */
 .slieve-hero {
+
     background:
-        radial-gradient(circle at top left,
-        rgba(14,165,233,0.22),
-        transparent 35%),
+        radial-gradient(circle at top right,
+        rgba(74,222,128,0.12),
+        transparent 28%),
 
         linear-gradient(
             135deg,
-            #0f172a 0%,
-            #111827 55%,
-            #0c4a6e 100%
+            rgba(3,20,15,0.96),
+            rgba(6,78,59,0.92)
         );
 
-    border: 1px solid rgba(125,211,252,0.16);
-    border-radius: 30px;
-    padding: 3rem;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    border: 1px solid rgba(74,222,128,0.16);
+
+    border-radius: 34px;
+
+    padding: 3.2rem;
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,0.45);
+
     margin-bottom: 2rem;
 }
 
-.brand-kicker {
-    color: #38bdf8;
-    font-size: 0.82rem;
-    font-weight: 800;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+/* BRAND */
+.brand-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 1.6rem;
 }
 
-.hero-title {
-    font-size: 3.5rem;
+.brand-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #16a34a
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #02120d;
+
+    font-size: 1.5rem;
     font-weight: 900;
-    letter-spacing: -0.07em;
-    margin-bottom: 1rem;
-    line-height: 1;
+
+    box-shadow:
+        0 10px 30px rgba(34,197,94,0.25);
 }
 
-.hero-subtitle {
-    color: #cbd5e1;
+.brand-text {
     font-size: 1.15rem;
-    line-height: 1.8;
+    font-weight: 800;
+    color: #bbf7d0;
+    letter-spacing: -0.02em;
+}
+
+/* TITLE */
+.hero-title {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.08em;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #bbf7d0
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 1rem;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #d1fae5;
     max-width: 760px;
 }
 
 /* CARD */
 .card {
-    background: rgba(15,23,42,0.82);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 26px;
+    background:
+        rgba(6,22,17,0.72);
+
+    border:
+        1px solid rgba(74,222,128,0.08);
+
+    border-radius: 28px;
+
     padding: 2rem;
+
     margin-top: 1rem;
-    box-shadow: 0 12px 50px rgba(0,0,0,0.28);
+
     backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.25);
 }
 
-/* TEXTAREA */
+/* INPUT */
 .stTextArea textarea {
-    background: #0f172a !important;
-    color: #f8fafc !important;
-    border: 1px solid rgba(125,211,252,0.16) !important;
-    border-radius: 18px !important;
+
+    background:
+        rgba(2,12,9,0.92) !important;
+
+    color:
+        #f0fdf4 !important;
+
+    border:
+        1px solid rgba(74,222,128,0.12) !important;
+
+    border-radius: 20px !important;
+
     padding: 1rem !important;
+
     font-size: 0.96rem !important;
 }
 
-/* FILE UPLOADER */
+/* UPLOADER */
 .stFileUploader {
-    background: rgba(15,23,42,0.72);
-    border-radius: 18px;
+
+    background:
+        rgba(3,15,11,0.8);
+
+    border-radius: 20px;
+
     padding: 1rem;
-    border: 1px dashed rgba(125,211,252,0.18);
+
+    border:
+        1px dashed rgba(74,222,128,0.18);
 }
 
 /* BUTTON */
 .stButton button {
+
     background:
         linear-gradient(
             135deg,
-            #0284c7,
-            #0f766e
+            #22c55e,
+            #15803d
         );
 
     color: white;
+
     border: 0;
+
     border-radius: 999px;
-    padding: 0.8rem 1.6rem;
+
+    padding:
+        0.85rem 1.8rem;
+
     font-weight: 800;
+
     font-size: 1rem;
-    transition: 0.2s ease;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 12px 30px rgba(34,197,94,0.22);
 }
 
 .stButton button:hover {
-    transform: translateY(-1px);
-    opacity: 0.95;
+
+    transform:
+        translateY(-2px);
+
+    opacity: 0.96;
 }
 
 /* RADIO */
@@ -159,37 +252,43 @@ div[role="radiogroup"] {
 }
 
 /* TABS */
-[data-baseweb="tab-list"] {
-    gap: 12px;
-}
-
 [data-baseweb="tab"] {
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
-    padding: 10px 18px;
-}
 
-/* DIVIDER */
-hr {
-    border-color: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,0.04);
+
+    border-radius: 14px;
+
+    padding:
+        10px 18px;
 }
 
 /* SUCCESS */
 .stSuccess {
-    border-radius: 18px;
+
+    border-radius: 16px;
+}
+
+/* FOOTER */
+footer {
+    visibility: hidden;
 }
 
 </style>
-""", unsafe_allow_html=True)
 
-# =========================
-# HERO SECTION
-# =========================
-st.markdown("""
+
 <div class="slieve-hero">
 
-    <div class="brand-kicker">
-        Slieve Tech
+    <div class="brand-row">
+
+        <div class="brand-logo">
+            ⛰
+        </div>
+
+        <div class="brand-text">
+            SlieveTech
+        </div>
+
     </div>
 
     <div class="hero-title">
@@ -197,70 +296,14 @@ st.markdown("""
     </div>
 
     <div class="hero-subtitle">
-        Premium AI intelligence platform for job descriptions,
-        employment contracts, hiring gaps, legal risks,
-        and candidate-role alignment analysis.
+        Enterprise AI intelligence platform for job descriptions,
+        employment contracts, hiring gaps, compliance risks,
+        and workforce alignment analysis.
     </div>
 
 </div>
+
 """, unsafe_allow_html=True)
-
-# =========================
-# MODE SELECTION
-# =========================
-mode = st.radio(
-    "Analysis Mode",
-    [
-        "Job Description Review",
-        "Contract Review",
-        "JD Contract Alignment"
-    ],
-    horizontal=True
-)
-
-st.divider()
-
-# =========================
-# JD MODE
-# =========================
-if mode == "Job Description Review":
-
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-
-    st.subheader("Job Description Analysis")
-
-    jd_file = st.file_uploader(
-        "Upload JD file",
-        type=["txt"],
-        key="jd_only"
-    )
-
-    jd_text = read_uploaded_file(jd_file)
-
-    jd_text = st.text_area(
-        "Or paste job description",
-        value=jd_text,
-        height=320,
-        placeholder="Paste the job description here..."
-    )
-
-    if st.button("Run Analysis"):
-
-        if not jd_text.strip():
-
-            st.warning("Please upload or paste a job description.")
-
-        else:
-
-            with st.spinner("Analyzing job description..."):
-
-                result = analyze_jd_gaps(jd_text)
-
-            st.success("Analysis completed")
-
-            st.markdown(result)
-
-    st.markdown('</div>', unsafe_allow_html=True)
 
 # =========================
 # CONTRACT MODE
