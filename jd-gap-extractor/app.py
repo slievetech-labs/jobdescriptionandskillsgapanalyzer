@@ -23,7 +23,7 @@ from src.analyzer import (
 
 st.set_page_config(
     page_title="TalentScope | SlieveTech",
-   
+    page_icon=None,
     layout="wide",
 )
 
