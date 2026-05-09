@@ -314,6 +314,15 @@ header {
 
 st.html("""
 <div class="hero">
+    <div class="logo-row">
+
+
+
+    <div class="logo-text">
+        Slieve<span>Tech</span>
+    </div>
+
+</div>
 
     
 
