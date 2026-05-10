@@ -4,9 +4,9 @@
 
 A production-ready CLI tool that uses the Claude API with **real-time streaming** to:
 
-1. 📋 **Analyse Job Descriptions** find missing sections, vague language, bias, and compensation gaps  
-2. 📄 **Extract Contract Clauses** pull every clause, flag risk levels, return structured JSON  
-3. 🔍 **Cross-Gap Analysis** compare a JD against its contract to surface discrepancies  
+1.  **Analyse Job Descriptions** find missing sections, vague language, bias, and compensation gaps  
+2.  **Extract Contract Clauses** pull every clause, flag risk levels, return structured JSON  
+3.  **Cross-Gap Analysis** compare a JD against its contract to surface discrepancies  
 
 ---
 
@@ -33,7 +33,7 @@ python src/analyzer.py
 
 ---
 
-## VS Code — Live Build & Debug
+## VS Code : Live Build & Debug
 
 Open the project folder in VS Code:
 
